@@ -19,12 +19,6 @@ import {
     DifficultyLevel
 } from '../tutorial-schema';
 import {
-    AssistantSession,
-    AssistantMessage,
-    createSession,
-    createMessage
-} from '../openclaw-protocol';
-import {
     VisualizationEvent,
     RegisterUpdateEvent,
     MemoryUpdateEvent,
@@ -204,35 +198,6 @@ export function createMockCompletedProgress(lessonId: string): TutorialProgress 
         completedAt: Date.now(),
         timeSpentSeconds: 300,
     });
-}
-
-// ============= Assistant Mocks =============
-
-/**
- * Create a mock assistant session
- */
-export function createMockAssistantSession(): AssistantSession {
-    const session = createSession();
-    session.messages.push(
-        createMessage('user', 'How do I print a number?'),
-        createMessage('assistant', 'To print a number, first load it with 📥 then use 🖨️ to print!', 'explanation')
-    );
-    return session;
-}
-
-/**
- * Create mock conversation history
- */
-export function createMockConversation(messageCount: number = 5): AssistantMessage[] {
-    const messages: AssistantMessage[] = [];
-    for (let i = 0; i < messageCount; i++) {
-        const role = i % 2 === 0 ? 'user' : 'assistant';
-        const content = role === 'user'
-            ? `Question ${Math.floor(i / 2) + 1}`
-            : `Answer ${Math.floor(i / 2) + 1}`;
-        messages.push(createMessage(role, content));
-    }
-    return messages;
 }
 
 // ============= Visualization Event Mocks =============

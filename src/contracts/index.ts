@@ -121,34 +121,6 @@ export {
     getLocalizedText,
 } from './tutorial-schema';
 
-// ============= OpenClaw Contracts =============
-export {
-    // Types
-    type MessageRole,
-    type ContentType,
-    type AssistantMessage,
-    type CodeSuggestion,
-    type ExplanationRequest,
-    type ExplanationResponse,
-    type HintRequest,
-    type HintResponse,
-    type DebugRequest,
-    type DebugResponse,
-    type AssistantSession,
-    type SessionConfig,
-    type OpenClawService,
-    type OpenClawEventType,
-    type OpenClawEvent,
-    // Constants
-    OPENCLAW_PROTOCOL_VERSION,
-    DEFAULT_SESSION_CONFIG,
-    // Functions
-    generateSessionId,
-    generateMessageId,
-    createMessage,
-    createSession,
-} from './openclaw-protocol';
-
 // ============= Mocks =============
 export * from './mocks';
 
@@ -164,6 +136,4 @@ export {
     validateResourceLimits,
     validateLesson,
     validateLessonStep,
-    validateAssistantMessage,
-    validateAssistantSession,
 } from './validators';
