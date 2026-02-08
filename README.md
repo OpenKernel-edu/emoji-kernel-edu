@@ -113,5 +113,6 @@ npx vitest run   # Run tests (55 passing)
 
 ---
 
-*Built with VibeCoding. Powered by 3D3D.ca.*
 *Every emoji you implement brings coding to millions who couldn't access it before.*
+
+Contact: 3d3dcanada@gmail.com
