@@ -46,22 +46,9 @@
 /* Hero */
 .welcome-hero {
   text-align: center;
-  padding: 40px 0 32px;
-  position: relative;
-}
-
-.welcome-hero::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 300px;
-  background: radial-gradient(ellipse at center, var(--accent) 0%, transparent 70%);
-  opacity: 0.06;
-  pointer-events: none;
-  z-index: -1;
+  padding: 60px 0 48px;
+  background: radial-gradient(ellipse at center, rgba(90, 82, 224, 0.08) 0%, transparent 70%);
+  border-radius: 24px;
 }
 
 .welcome-emoji-float {
@@ -96,9 +83,9 @@
 }
 
 .welcome-title {
-  font-size: 56px;
+  font-size: 52px;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--accent) 0%, #8b7cf7 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, #7c6ef5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -107,7 +94,6 @@
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease 0.2s;
-  text-shadow: 0 4px 20px rgba(90, 82, 224, 0.2);
 }
 
 .welcome-title.visible {
@@ -199,8 +185,10 @@
 
 /* Sections */
 .welcome-section {
-  padding: 40px 0;
+  padding: 48px 0;
   border-top: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(90, 82, 224, 0.02) 50%, transparent 100%);
 }
 
 .welcome-section-title {
@@ -209,14 +197,6 @@
   font-weight: 800;
   color: var(--text);
   margin-bottom: 28px;
-}
-
-/* Subtle background pattern for sections */
-.welcome-section:nth-child(odd) {
-  background: linear-gradient(180deg, transparent 0%, rgba(90, 82, 224, 0.02) 100%);
-  margin: 0 -24px;
-  padding: 40px 24px;
-  border-radius: 8px;
 }
 
 /* Cards */
@@ -273,7 +253,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 12px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
@@ -281,8 +261,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 260px;
-  padding: 16px;
+  width: 220px;
 }
 
 .step-number {
@@ -384,10 +363,10 @@
 /* Join */
 .welcome-join {
   text-align: center;
-  background: linear-gradient(135deg, rgba(90, 82, 224, 0.05) 0%, transparent 100%);
-  margin: 0 -24px;
-  padding: 32px 24px;
-  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(90, 82, 224, 0.06) 0%, rgba(90, 82, 224, 0.02) 100%);
+  border-radius: 16px;
+  padding: 32px;
+  margin: 16px 0;
   border: 1px solid rgba(90, 82, 224, 0.1);
 }
 
