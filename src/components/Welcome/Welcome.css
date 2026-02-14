@@ -46,7 +46,9 @@
 /* Hero */
 .welcome-hero {
   text-align: center;
-  padding: 40px 0 32px;
+  padding: 60px 0 48px;
+  background: radial-gradient(ellipse at center, rgba(90, 82, 224, 0.08) 0%, transparent 70%);
+  border-radius: 24px;
 }
 
 .welcome-emoji-float {
@@ -81,9 +83,12 @@
 }
 
 .welcome-title {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 800;
-  color: var(--accent);
+  background: linear-gradient(135deg, var(--accent) 0%, #7c6ef5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: -1.5px;
   margin-bottom: 8px;
   opacity: 0;
@@ -180,8 +185,10 @@
 
 /* Sections */
 .welcome-section {
-  padding: 40px 0;
+  padding: 48px 0;
   border-top: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(90, 82, 224, 0.02) 50%, transparent 100%);
 }
 
 .welcome-section-title {
@@ -210,8 +217,8 @@
 
 .welcome-card:hover {
   border-color: var(--accent);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(90, 82, 224, 0.2);
 }
 
 .welcome-card.clickable {
@@ -246,7 +253,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 12px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
@@ -356,6 +363,11 @@
 /* Join */
 .welcome-join {
   text-align: center;
+  background: linear-gradient(135deg, rgba(90, 82, 224, 0.06) 0%, rgba(90, 82, 224, 0.02) 100%);
+  border-radius: 16px;
+  padding: 32px;
+  margin: 16px 0;
+  border: 1px solid rgba(90, 82, 224, 0.1);
 }
 
 .welcome-join-text {
